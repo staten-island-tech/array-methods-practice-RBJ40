@@ -36,8 +36,7 @@ Using the same `students` array, use `filter` to:
 1. **Filter students with grades above 80**.
 
 ```javascript
-const topStudents = topStudents.filter((students) => students.grade > 80);
-console.log(topStudents);
+const topStudents = students.filter((students) => students.grade > 80);
 ```
 
 2. **Filter students who are 21 or younger**.
@@ -51,13 +50,15 @@ const youngStudents = youngStudents.filter((students) => students.age <= 21);
 1. **Log the names of students who scored above 80**.
 
 ```javascript
-
+const topStudents = students.filter((students) => students.grade > 80);
+topStudents.forEach(topStudent) => console.log(topStudents.name);
 ```
 
 2. **Log the names of students 21 or younger**.
 
 ```javascript
-
+const youngStudents = youngStudents.filter((students) => students.age <= 21);
+youngStudents.forEach(youngStudent) => console.log(youngStudents.name);
 ```
 
 ---
@@ -83,13 +84,13 @@ const products = [
 1. **Display Product Details**: Log the name and price of each product.
 
 ```javascript
-
+products.forEach(product) => console.log(products.name, products.price);
 ```
 
 2. **Increase Price**: Increase the price of each product by 10% and log the updated products.
 
 ```javascript
-
+const updatedProducts = products.forEach(product) => console.log(.1*products);
 ```
 
 3. **Summarize Categories**: Use `forEach` to create a list of all unique categories in the products array.
